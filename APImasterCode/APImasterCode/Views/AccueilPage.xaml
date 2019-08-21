@@ -6,12 +6,19 @@
              mc:Ignorable="d"
              x:Class="APImasterCode.Views.AccueilPage"
              xmlns:vm="clr-namespace:APImasterCode.ViewModels"
-             Title="{Binding Title}">
+             Title="{Binding Title}"
+             Style="{StaticResource PageStyle}" >
     
     <ContentPage.BindingContext>
         <vm:AccueilViewModel />
     </ContentPage.BindingContext>
+
     
+        <StackLayout BackgroundColor="#0a1128">
+        
+        </StackLayout>
     
-    
+
+
+
 </ContentPage>

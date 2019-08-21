@@ -7,7 +7,9 @@
             xmlns:views="clr-namespace:APImasterCode.Views"
             x:Class="APImasterCode.Views.MainPage">
 
+    
     <TabbedPage.Children>
+        
         <NavigationPage Title="Accueil">
             <NavigationPage.Icon>
                 <OnPlatform x:TypeArguments="FileImageSource">
@@ -40,5 +42,11 @@
             </x:Arguments>
         </NavigationPage>
     </TabbedPage.Children>
+    <ContentPage>
+        <StackLayout BackgroundColor="#0a1128">
+           
+            
+        </StackLayout>
+    </ContentPage>
     
 </TabbedPage>

@@ -6,7 +6,29 @@
              mc:Ignorable="d"
              x:Class="APImasterCode.Views.ItemsPage"
              Title="{Binding Title}"
-             x:Name="BrowseItemsPage">
+             x:Name="BrowseItemsPage"
+             Style="{StaticResource PageStyle}">
 
-   
+    <!--<ContentPage.Resources>
+        <ResourceDictionary>
+           
+        </ResourceDictionary>
+    </ContentPage.Resources>-->
+    <ContentPage.Content>
+        
+        
+        <ScrollView>
+            
+                
+
+                
+
+                
+
+               
+           
+        </ScrollView>
+
+
+    </ContentPage.Content>
 </ContentPage>
