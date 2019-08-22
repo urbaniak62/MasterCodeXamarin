@@ -13,24 +13,64 @@
         <vm:AccueilViewModel />
     </ContentPage.BindingContext>
     <ScrollView>
-        
-       
-            <StackLayout VerticalOptions="Start" 
-                               HorizontalOptions="FillAndExpand" 
-                               Orientation="Horizontal"          
-                               Padding="10,5,10,5"
-                               BackgroundColor="#0a1128">
-            <Label HorizontalOptions="CenterAndExpand" Text="C#" 
+
+        <StackLayout x:Name="Categories" VerticalOptions="Start" 
+                     >
+            <Grid x:Name="liste" ColumnSpacing="0" BackgroundColor="#0a1128">
+                <Grid.ColumnDefinitions >
+                    <ColumnDefinition Width="*"  />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions >
+                    <RowDefinition Height="20"/>
+
+                </Grid.RowDefinitions  >
+                
+                <Label Text="c#" 
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
                    TextColor="White"/>
-            <Label HorizontalOptions="CenterAndExpand" Text="HTML/css" 
+
+                <Label Grid.Column="1"
+                   Text="HTML/CSS" 
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
                    TextColor="White"/>
-            <Label HorizontalOptions="CenterAndExpand" Text="Javascript" 
+                <Label Grid.Column="2"
+                   Text="Javasript" 
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
                    TextColor="White"/>
+                <Label Grid.Column="3"
+                   Text="SVG" 
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   TextColor="White"/>
+            </Grid>
+            <Grid Margin="40, 40, 40, 40">
+                <Grid.RowDefinitions >
+                    <RowDefinition Height="20" />
+                    
+                </Grid.RowDefinitions  >
+                <StackLayout x:Name="dernierArticle"
+                             BackgroundColor="#EA5847"/>
+                <Label Text="DERNIER DISCUTION DU FORUM" 
+                       
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       TextColor="White"/>
+            </Grid>
         </StackLayout>
+        
+
+        
+
+        
 
 
 
+    </ScrollView>
 
-
-        </ScrollView>
 </ContentPage>

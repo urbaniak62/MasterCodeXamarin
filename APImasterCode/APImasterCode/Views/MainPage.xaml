@@ -9,41 +9,28 @@
 
     
     <TabbedPage.Children>
-        
+
         <NavigationPage Title="Accueil">
-            <NavigationPage.Icon>
-                <OnPlatform x:TypeArguments="FileImageSource">
-                    <On Platform="iOS" Value="tab_feed.png"/>
-                </OnPlatform>
-            </NavigationPage.Icon>
             <x:Arguments>
-                <views:AccueilPage />
+                <views:AccueilPage/>
+
             </x:Arguments>
         </NavigationPage>
         <NavigationPage Title="Forum">
-            <NavigationPage.Icon>
-                <OnPlatform x:TypeArguments="FileImageSource">
-                    <On Platform="iOS" Value="tab_feed.png"/>
-                </OnPlatform>
-            </NavigationPage.Icon>
             <x:Arguments>
                 <views:ForumPage />
             </x:Arguments>
         </NavigationPage>
 
         <NavigationPage Title="Connexion">
-            <NavigationPage.Icon>
-                <OnPlatform x:TypeArguments="FileImageSource" >
-                    <On Platform="iOS" Value="tab_about.png"/>
-                </OnPlatform>
-            </NavigationPage.Icon>
             <x:Arguments>
                 <views:ItemsPage />
             </x:Arguments>
         </NavigationPage>
         
+
+
     </TabbedPage.Children>
    
-    
 </TabbedPage>
 

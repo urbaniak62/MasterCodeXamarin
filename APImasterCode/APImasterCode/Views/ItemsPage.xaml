@@ -9,26 +9,49 @@
              x:Name="BrowseItemsPage"
              Style="{StaticResource PageStyle}">
 
-    <!--<ContentPage.Resources>
+    <ContentPage.Resources>
         <ResourceDictionary>
            
         </ResourceDictionary>
-    </ContentPage.Resources>-->
-    <ContentPage.Content>
-        
-        
-        <ScrollView>
-            
-                
+    </ContentPage.Resources>
+    <ScrollView>
 
-                
+        <StackLayout x:Name="Categories" VerticalOptions="Start" 
+                     BackgroundColor="#0a1128">
+            <Grid x:Name="liste" ColumnSpacing="0">
+                <Grid.ColumnDefinitions >
+                    <ColumnDefinition Width="*"  />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions >
+                    <RowDefinition Height="20"/>
 
-                
+                </Grid.RowDefinitions  >
+                <BoxView BackgroundColor="#FFFFF"/>
+                <Label Text="c#" 
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   TextColor="White"/>
 
-               
-           
-        </ScrollView>
+                <Label Grid.Column="1"
+                   Text="HTML/CSS" 
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   TextColor="White"/>
+                <Label Grid.Column="2"
+                   Text="Javasript" 
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   TextColor="White"/>
+                <Label Grid.Column="3"
+                   Text="SVG" 
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   TextColor="White"/>
+            </Grid>
+        </StackLayout>
 
-
-    </ContentPage.Content>
+    </ScrollView>
 </ContentPage>

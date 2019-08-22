@@ -9,6 +9,9 @@ namespace APImasterCode.Services
     public class MockDataStore : IDataStore<Item>
     {
         List<Item> items;
+        List<Categorie> categories;
+
+        public List<Categorie> Categorie { get; private set; }
 
         public MockDataStore()
         {
@@ -61,6 +64,25 @@ namespace APImasterCode.Services
         public async Task<IEnumerable<Item>> GetItemsAsync(bool forceRefresh = false)
         {
             return await Task.FromResult(items);
+        }
+
+        public async Task<IEnumerable<Categorie>>GetCategoriesAsync(bool forceRefresh=false)
+        {
+            categories = new List<Categorie>();
+            var listCategorie = new List<Categorie>
+            {
+                new Categorie{Id =Guid.NewGuid().ToString(),LibelleCategorie="c#",},
+                new Categorie{Id =Guid.NewGuid().ToString(),LibelleCategorie="HTML/css",}
+            };
+            foreach (var item in categories)              
+            {
+                categories.Add(item);
+            }
+            return await Task.FromResult(categories);
+        }
+        public async Task<Categorie>GetCategorieAsync(string id)
+        {
+            return await Task.FromResult(Categorie.FirstOrDefault(s => s.Id == id));
         }
     }
 }
