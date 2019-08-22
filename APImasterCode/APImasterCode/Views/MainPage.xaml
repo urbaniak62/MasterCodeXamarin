@@ -41,12 +41,9 @@
                 <views:ItemsPage />
             </x:Arguments>
         </NavigationPage>
+        
     </TabbedPage.Children>
-    <ContentPage>
-        <StackLayout BackgroundColor="#0a1128">
-           
-            
-        </StackLayout>
-    </ContentPage>
+   
     
 </TabbedPage>
+

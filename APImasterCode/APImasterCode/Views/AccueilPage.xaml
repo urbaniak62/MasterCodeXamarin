@@ -12,13 +12,25 @@
     <ContentPage.BindingContext>
         <vm:AccueilViewModel />
     </ContentPage.BindingContext>
-
-    
-        <StackLayout BackgroundColor="#0a1128">
+    <ScrollView>
         
+       
+            <StackLayout VerticalOptions="Start" 
+                               HorizontalOptions="FillAndExpand" 
+                               Orientation="Horizontal"          
+                               Padding="10,5,10,5"
+                               BackgroundColor="#0a1128">
+            <Label HorizontalOptions="CenterAndExpand" Text="C#" 
+                   TextColor="White"/>
+            <Label HorizontalOptions="CenterAndExpand" Text="HTML/css" 
+                   TextColor="White"/>
+            <Label HorizontalOptions="CenterAndExpand" Text="Javascript" 
+                   TextColor="White"/>
         </StackLayout>
-    
 
 
 
+
+
+        </ScrollView>
 </ContentPage>
